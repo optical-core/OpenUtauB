@@ -268,6 +268,7 @@
             </Border>
           </Panel>
           <ScrollBar Name="HScrollBar" Classes="music" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                    Background="{DynamicResource ScrollBarBackgroundColor}"
                     Margin="0,4,0,4" Orientation="Horizontal" AllowAutoHide="False"
                     DataContext="{Binding TracksViewModel}"
                     Maximum="{Binding HScrollBarMax, Mode=OneWay}"
@@ -276,6 +277,7 @@
                     LargeChange="{Binding ViewportTicks}"
                     SmallChange="{Binding SmallChangeX}" PointerWheelChanged="HScrollPointerWheelChanged"/>
           <ScrollBar Name="VScrollBar" Classes="music" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                    Background="{DynamicResource ScrollBarBackgroundColor}"
                     Margin="4,0,4,0" Orientation="Vertical" AllowAutoHide="False"
                     DataContext="{Binding TracksViewModel}"
                     Maximum="{Binding VScrollBarMax, Mode=OneWay}"
@@ -284,7 +286,8 @@
                     LargeChange="{Binding ViewportTracks}"
                     SmallChange="{Binding SmallChangeY}" PointerWheelChanged="VScrollPointerWheelChanged"/>
           <Canvas Name="TimelineCanvas" Grid.Row="1" Grid.Column="1"
-                  Background="Transparent" ClipToBounds="True"
+                  Background="{DynamicResource TimelineCanvasColor}"
+                  ClipToBounds="True"
                   PointerWheelChanged="TimelinePointerWheelChanged"
                   PointerPressed="TimelinePointerPressed"
                   PointerMoved="TimelinePointerMoved"

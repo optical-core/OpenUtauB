@@ -17,6 +17,9 @@
   <Color x:Key="BorderColorPointerOver">#B0B0B0</Color>
 
   <Color x:Key="SystemAccentColor">#4EA6EA</Color>
+
+  <Color x:Key="TimelineCanvasColor">#dddddd</Color>
+  <Color x:Key="ScrollBarBackgroundColor">#10000000</Color>
   <!-- PointerOver -->
   <Color x:Key="SystemAccentColorLight1">#90CAF9</Color>
   <!-- Pressed -->
@@ -31,7 +34,7 @@
   <Color x:Key="TickLineColor">#AFA3B5</Color>
   <Color x:Key="BarNumberColor">#AFA3B5</Color>
   <Color x:Key="FinalPitchColor">#C0C0C0</Color>
-  <Color x:Key="TrackBackgroundAltColor">#F0F0F0</Color>
+  <Color x:Key="TrackBackgroundAltColor">#EEF0F0F0</Color>
 
   <Color x:Key="WarningColor">#FFF4CE</Color>
 

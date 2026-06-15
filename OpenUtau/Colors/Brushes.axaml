@@ -42,6 +42,10 @@
                    Color="{DynamicResource ForegroundColorPointerOver}" />
   <SolidColorBrush x:Key="MenuFlyoutItemForegroundDisabled"
                    Color="{DynamicResource ForegroundColorDisabled}" />
+  <SolidColorBrush x:Key="MenuFlyoutItemTimelineCanvasColor"
+                   Color="{DynamicResource TimelineCanvasColor}" />
+  <SolidColorBrush x:Key="MenuFlyoutItemScrollBarBackgroundColor"
+                   Color="{DynamicResource ScrollBarBackgroundColor}" />
   <!--combo box background-->
   <SolidColorBrush x:Key="SystemControlBackgroundAltMediumLowBrush"
                    Color="{DynamicResource BackgroundColorPointerOver}" />

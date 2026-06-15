@@ -39,6 +39,7 @@
       </Grid>
       <ScrollBar Name="HScrollBar" Classes="music" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                  Margin="0,4,0,4" Orientation="Horizontal" AllowAutoHide="False"
+                 Background="{DynamicResource ScrollBarBackgroundColor}"
                  DataContext="{Binding NotesViewModel}"
                  Maximum="{Binding HScrollBarMax, Mode=OneWay}"
                  Value="{Binding TickOffset}"
@@ -47,6 +48,7 @@
                  SmallChange="{Binding SmallChangeX}" PointerWheelChanged="HScrollPointerWheelChanged"/>
       <ScrollBar Name="VScrollBar" Classes="music" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                  Margin="4,0,4,0" Orientation="Vertical" AllowAutoHide="False"
+                 Background="{DynamicResource ScrollBarBackgroundColor}"
                  DataContext="{Binding NotesViewModel}"
                  Maximum="{Binding VScrollBarMax, Mode=OneWay}"
                  Value="{Binding TrackOffset}"
@@ -105,7 +107,7 @@
         </Button>
       </Grid >
       <Canvas Name="TimelineCanvas" Grid.Row="2" Grid.Column="1"
-              Background="Transparent" ClipToBounds="True"
+              Background="{DynamicResource TimelineCanvasColor}" ClipToBounds="True"
               PointerWheelChanged="TimelinePointerWheelChanged"
               PointerPressed="TimelinePointerPressed"
               PointerMoved="TimelinePointerMoved"
